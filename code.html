@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head></head><body class="bg-background text-on-background font-body-md text-body-md antialiased pattern-bg selection:bg-primary-container selection:text-white" ontouchstart="">```html
+
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr Merilly's - Regal Clinical Minimal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-dim": "#ecd5d1",
+                "primary-container": "#650000",
+                "surface-container-highest": "#f5ddda",
+                "secondary-fixed": "#e2e2e2",
+                "secondary": "#5d5e5f",
+                "inverse-surface": "#3b2d2b",
+                "tertiary-fixed-dim": "#bcc2ff",
+                "on-secondary-fixed-variant": "#454747",
+                "on-primary-fixed": "#410000",
+                "on-background": "#251917",
+                "outline": "#8c716d",
+                "on-tertiary-fixed-variant": "#2839aa",
+                "on-surface": "#251917",
+                "error": "#ba1a1a",
+                "tertiary-fixed": "#dfe0ff",
+                "outline-variant": "#dfbfba",
+                "tertiary-container": "#001893",
+                "primary": "#3e0000",
+                "surface-tint": "#aa3527",
+                "on-primary-container": "#f46b58",
+                "primary-fixed": "#ffdad4",
+                "on-error": "#ffffff",
+                "background": "#fff8f6",
+                "primary-fixed-dim": "#ffb4a8",
+                "inverse-primary": "#ffb4a8",
+                "inverse-on-surface": "#ffedea",
+                "on-secondary": "#ffffff",
+                "surface": "#fff8f6",
+                "on-secondary-fixed": "#1a1c1c",
+                "surface-container-lowest": "#ffffff",
+                "on-surface-variant": "#58413e",
+                "on-tertiary-fixed": "#000c61",
+                "tertiary": "#000b5c",
+                "on-secondary-container": "#636465",
+                "surface-bright": "#fff8f6",
+                "on-tertiary": "#ffffff",
+                "on-primary-fixed-variant": "#891d13",
+                "surface-container": "#ffe9e6",
+                "on-error-container": "#93000a",
+                "secondary-fixed-dim": "#c6c6c6",
+                "error-container": "#ffdad6",
+                "surface-variant": "#f5ddda",
+                "surface-container-low": "#fff0ee",
+                "on-tertiary-container": "#7c8cff",
+                "surface-container-high": "#fae3df",
+                "on-primary": "#ffffff",
+                "secondary-container": "#e2e2e2"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "gutter": "24px",
+                "md": "24px",
+                "xl": "80px",
+                "sm": "12px",
+                "xs": "4px",
+                "base": "8px",
+                "margin": "32px",
+                "lg": "48px"
+        },
+        "fontFamily": {
+                "h2": [
+                        "Epilogue"
+                ],
+                "h3": [
+                        "Epilogue"
+                ],
+                "h1": [
+                        "Epilogue"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "label-sm": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "h2": [
+                        "36px",
+                        {
+                                "lineHeight": "1.3",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "h3": [
+                        "24px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "500"
+                        }
+                ],
+                "h1": [
+                        "48px",
+                        {
+                                "lineHeight": "1.2",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-sm": [
+                        "13px",
+                        {
+                                "lineHeight": "1.0",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 40c-5.52 0-10-4.48-10-10h2c0 4.418 3.582 8 8 8s8-3.582 8-8h2c0 5.52-4.48 10-10 10z' fill='%23650000' fill-opacity='0.10' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        /* Infinite Scroll Animation */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-250px * 7)); }
+        }
+        .slider {
+            height: 60px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        .slider::before, .slider::after {
+            background: linear-gradient(to right, #650000 0%, rgba(101, 0, 0, 0) 100%) !important;
+            content: "";
+            height: 60px;
+            position: absolute;
+            width: 200px;
+            z-index: 2;
+        }
+        .slider::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+        .slider::before {
+            left: 0;
+            top: 0;
+        }
+        .slide-track {
+            animation: scroll 40s linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+        }
+        .slide {
+            height: 60px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Scroll Animations */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            visibility: hidden;
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, visibility;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+            visibility: visible;
+        }
+
+        /* Card Glow and Hover Effects */
+        .service-card, .gallery-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        @media (hover: hover) and (pointer: fine) {
+            .service-card:hover, .gallery-card:hover {
+                transform: translateY(-8px) scale(1.02);
+                box-shadow: 0 15px 35px rgba(101, 0, 0, 0.25);
+                border-color: #650000;
+            }
+            .service-card:hover::after, .gallery-card:hover::after {
+                transform: scaleX(1);
+            }
+        }
+
+        .service-card:active, .gallery-card:active,
+        .service-card.touch-active, .gallery-card.touch-active {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(101, 0, 0, 0.25);
+            border-color: #650000;
+        }
+
+        .service-card::after, .gallery-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #650000;
+            box-shadow: 0 0 15px 5px rgba(101, 0, 0, 0.5);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            z-index: 10;
+        }
+
+        .service-card:active::after, .gallery-card:active::after,
+        .service-card.touch-active::after, .gallery-card.touch-active::after {
+            transform: scaleX(1);
+        }
+
+        /* Hide Scrollbar */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 100;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+        .whatsapp-btn svg {
+            width: 35px;
+            height: 35px;
+            fill: currentColor;
+        }
+    </style>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in-section').forEach((el) => {
+                observer.observe(el);
+            });
+
+            // Mobile Menu Toggle
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if(menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // Mobile touch simulation for cards
+            document.querySelectorAll('.service-card, .gallery-card').forEach(card => {
+                card.addEventListener('touchstart', () => card.classList.add('touch-active'), {passive: true});
+                card.addEventListener('touchend', () => card.classList.remove('touch-active'), {passive: true});
+                card.addEventListener('touchcancel', () => card.classList.remove('touch-active'), {passive: true});
+            });
+        });
+    </script>
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-[#FFFFFF] border-b border-outline-variant/30 shadow-sm transition-all duration-300 relative">
+<div class="max-w-7xl mx-auto px-margin flex justify-between items-center h-20">
+<!-- Brand Logo -->
+<a href="#hero">
+<img alt="Dr Merilly's Dental Clinic Logo" class="h-14 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uhvDxxJlbwAlUlTtrqHF4SzGvbUzt0lqrbopjf4059vxdGkd-Xc7XCRlLNDfcgRix01SIFfJo6EeB4XygPLIZ4Nh8SU5Qd2Qk-KfwbitIUzlwPrIszZnGjlGwP5bLa6IT3QWmXjuml7L2PH4jIkN2fltVIoKeNx950X6uuYiqWaXUe829JUcooRHAI_jsQiLI8awCWT9FHuLyXrIyzTJOdneCqp8mem00YDgr3D0mq57PRNAsrdPIExjT_6eALZENZqWbWNA-Qxow"/>
+</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-medium" href="tel:+918258056053">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-medium" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-medium" href="#cases">Cases</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-medium" href="#reviews">Reviews</a>
+</div>
+<!-- Trailing Action -->
+<a class="hidden md:inline-flex items-center justify-center px-6 py-3 bg-[#d89216] text-white font-label-sm text-label-sm rounded hover:bg-[#c48414] transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-[#d89216] focus:ring-offset-2 focus:ring-offset-background" href="tel:+918258056053">
+                Book Appointment
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+<!-- Mobile Menu Dropdown -->
+<div class="hidden md:hidden bg-white border-b border-outline-variant/30 px-margin py-6 flex flex-col gap-6 absolute w-full left-0 top-20 shadow-md z-40" id="mobile-menu">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-medium text-lg" href="tel:+918258056053">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-medium text-lg" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-medium text-lg" href="#cases">Cases</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-medium text-lg" href="#reviews">Reviews</a>
+<a class="px-6 py-4 bg-[#d89216] text-white font-label-sm text-label-sm rounded hover:bg-[#c48414] transition-colors shadow-sm text-center uppercase tracking-wider" href="tel:+918258056053">Book Appointment</a>
+</div>
+</nav>
+<!-- MAIN CONTENT -->
+<main>
+<!-- HERO SECTION (#hero) -->
+<section class="max-w-7xl mx-auto px-margin pt-xl pb-lg grid grid-cols-1 lg:grid-cols-2 gap-xl items-center fade-in-section is-visible" id="hero">
+<div class="flex flex-col space-y-md">
+<div class="inline-flex items-center space-x-sm bg-surface-container-high px-4 py-2 rounded-full w-fit">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-primary-container uppercase">Accepting New Patients</span>
+</div>
+<h1 class="font-h1 text-h1 text-primary" style="font-family: 'Playfair Display', serif;">Shaping Your Smile Better</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Advanced dental care in Shillong with personalized treatments, modern technology, and compassionate patient care.</p>
+<div class="flex flex-col sm:flex-row gap-sm pt-sm">
+<a class="bg-[#d89216] text-white font-label-sm text-label-sm px-8 py-4 rounded hover:bg-[#c48414] transition-colors uppercase tracking-wider text-center" href="tel:+918258056053">Book Appointment</a>
+<a class="bg-transparent border border-primary-container text-primary-container font-label-sm text-label-sm px-8 py-4 rounded hover:bg-primary-container hover:text-white transition-colors uppercase tracking-wider text-center flex items-center justify-center gap-xs" href="tel:+918258056053">
+<span class="material-symbols-outlined" data-icon="call">call</span> Call Now
+                    </a>
+</div>
+<div class="pt-lg border-t border-outline-variant/30 mt-sm flex items-center gap-md">
+<div class="flex flex-col">
+<span class="font-h3 text-h3 text-primary">Dr. Merrily Nongsiej</span>
+<span class="font-body-md text-body-md text-on-surface-variant">BDS &amp; MDS (Prosthodontist &amp; Implantologist)</span>
+</div>
+</div>
+</div>
+<div class="relative h-[500px] rounded-xl overflow-hidden shadow-sm">
+<img alt="Dr Merilly's Dental Clinic Patient Care" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujFJewDw64hsydrJOEzCRoYpicR-TLrMXKQPODHV_rPLbhpIIyLzGWqGf4nCNSLH-VBe8CltdZY2MObmb5LbQKYFsuHlYDmYccq6-ezdNtBovxlYFxZBr6gWGGbjG18sGcn3-YWiHEmYB1ETvRyVuNXkThA72yIXas6xRsO5haTGlUDwL_Ltm4lqru65tm_dS0Y6DJk8X7vy6XWlrdyhNAB2dD2Yq1pa2WdfJxXEzfTxayaobi456QV6qWWj8iZEh7RDj3UkPxXP0Q"/>
+</div>
+</section>
+<!-- Infinite Scroll Ribbon -->
+<div class="w-full border-y border-outline-variant/20 py-4 bg-primary-container fade-in-section is-visible">
+<div class="slider">
+<div class="slide-track font-label-sm text-label-sm tracking-widest uppercase text-white/90">
+<div class="slide">Aesthetic Dentistry <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Implantology <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Orthodontics <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Oral Surgery <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Endodontics <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Pediatric Care <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Periodontics <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<!-- Double the items for seamless loop -->
+<div class="slide">Aesthetic Dentistry <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Implantology <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Orthodontics <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Oral Surgery <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Endodontics <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Pediatric Care <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+<div class="slide">Periodontics <span class="material-symbols-outlined mx-4 text-primary opacity-50 text-sm text-white">diamond</span></div>
+</div>
+</div>
+</div>
+<!-- SERVICES SECTION (#services) -->
+<section class="bg-surface-container-lowest/80 backdrop-blur-sm py-xl border-y border-outline-variant/10 fade-in-section is-visible" id="services">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center mb-xl max-w-2xl mx-auto">
+<h2 class="font-h2 text-h2 text-primary mb-sm">Multispeciality Dental Clinic</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We offer a full spectrum of dental treatments utilizing state-of-the-art technology to ensure your optimal oral health.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Dental Routine Check-up</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Comprehensive oral examinations to maintain dental health.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">clean_hands</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Teeth Cleaning &amp; Polishing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Professional scaling and polishing for a brighter smile.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">wb_incandescent</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Teeth Whitening</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Advanced teeth whitening procedures for instant results.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">layers</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Dental Fillings</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Restoring decayed or damaged teeth with high-quality materials.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">person_remove</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Tooth Extractions</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Painless removal of problematic or damaged teeth.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Root Canal Treatments</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Saving infected teeth through expert endodontic care.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">grid_view</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Dental Braces</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Correcting misalignments for a perfectly straight smile.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">dentistry</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Teeth Replacement</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Restoring missing teeth with functional and aesthetic solutions.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Crown &amp; Bridge</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">High-strength ceramic restorations for damaged or missing teeth.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">account_balance_wallet</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Dentures</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Custom-fitted partial and full dentures for complete comfort.</p>
+</div>
+<div class="bg-surface/90 backdrop-blur p-margin rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 ease-out border border-outline-variant/20 flex flex-col items-start group service-card">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-md text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-xs">Dental Implants</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Permanent, titanium-based roots for lifetime tooth replacement.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT SECTION (#about) -->
+<section class="py-xl fade-in-section is-visible" id="about">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center mb-xl">
+<div>
+<h1 class="font-h1 text-h1 text-primary mb-md" style="font-family: 'Playfair Display', serif;">About Dr. Merrily Nongsiej</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl">
+                        A commitment to excellence in modern dentistry, blending clinical precision with a warm, patient-first approach in the heart of Shillong.
+                    </p>
+<div class="flex gap-sm">
+<span class="inline-flex items-center px-sm py-xs rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm">
+                            BDS
+                        </span>
+<span class="inline-flex items-center px-sm py-xs rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm">
+                            MDS (Prosthodontics)
+                        </span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.08)] aspect-[4/5]">
+<img alt="Dr. Merrily Nongsiej" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida/ADBb0ugu9i9qNV9GH5RTKhvly1-iv4v_1qK98Hnqzlq_-mcbLDMb45aNeCHhBvY7iQCU8Zi95T6nEyFdmsCPmLaBwxnK1cbul2jNAhUUTZNaw_9kqmaSB86pisjd78CKJWuLoLjazSuMdjs9VGdKp1RM4IpX01qCITf2pTPgwqR4r5e2cobdI7cgQGsn7IcjA5GkWfwrKr84ZNR1gOxM-zemTEnjlyORwR4OE7ZGt7y4fDXsg3rvJmGA0CpthTRDAHd3o_sK3DkvYLDfE50"/>
+</div>
+</div>
+<!-- FAQ Section inserted here -->
+<div class="mb-xl">
+<div class="text-center mb-lg">
+<h2 class="font-h2 text-h2 text-primary mb-sm">Frequently Asked Questions</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Everything you need to know about our treatments and patient care.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-4">
+<details class="group bg-surface rounded-lg border border-outline-variant/30 overflow-hidden shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer p-md font-h3 text-h3 text-primary list-none [&amp;::-webkit-details-marker]:hidden">
+<span class="text-[20px]">What should I expect during my first visit?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary-container">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md text-body-md">
+                Your first visit includes a comprehensive oral examination, digital X-rays if necessary, and a detailed consultation to discuss your dental health goals and create a personalized treatment plan.
+            </div>
+</details>
+<details class="group bg-surface rounded-lg border border-outline-variant/30 overflow-hidden shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer p-md font-h3 text-h3 text-primary list-none [&amp;::-webkit-details-marker]:hidden">
+<span class="text-[20px]">Do you offer painless dentistry?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary-container">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md text-body-md">
+                Absolutely. We utilize advanced numbing techniques and modern equipment to ensure every procedure is as comfortable and pain-free as possible.
+            </div>
+</details>
+<details class="group bg-surface rounded-lg border border-outline-variant/30 overflow-hidden shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer p-md font-h3 text-h3 text-primary list-none [&amp;::-webkit-details-marker]:hidden">
+<span class="text-[20px]">How long do dental implants last?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary-container">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md text-body-md">
+                With proper care and routine dental check-ups, dental implants can last a lifetime. The ceramic crowns attached to them may need replacement after 10-15 years due to normal wear.
+            </div>
+</details>
+<details class="group bg-surface rounded-lg border border-outline-variant/30 overflow-hidden shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer p-md font-h3 text-h3 text-primary list-none [&amp;::-webkit-details-marker]:hidden">
+<span class="text-[20px]">Are porcelain veneers right for me?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary-container">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md text-body-md">
+                Veneers are an excellent option for correcting discoloration, chips, gaps, or misaligned teeth. We provide a thorough aesthetic evaluation to determine if they are the best solution for your smile.
+            </div>
+</details>
+<details class="group bg-surface rounded-lg border border-outline-variant/30 overflow-hidden shadow-sm">
+<summary class="flex items-center justify-between cursor-pointer p-md font-h3 text-h3 text-primary list-none [&amp;::-webkit-details-marker]:hidden">
+<span class="text-[20px]">What payment options do you accept?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary-container">expand_more</span>
+</summary>
+<div class="p-md pt-0 text-on-surface-variant font-body-md text-body-md">
+                We accept major credit/debit cards, UPI, and bank transfers. We also offer flexible payment plans for extensive treatments like full mouth rehabilitation and implants.
+            </div>
+</details>
+</div>
+</div>
+<div class="bg-surface-container-lowest border-y border-outline-variant/20 p-lg md:p-xl rounded-xl mb-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="md:col-span-2 bg-surface p-lg md:p-xl rounded-xl border border-outline-variant/30 shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_50px_rgba(0,0,0,0.06)] transition-shadow duration-300">
+<span class="material-symbols-outlined text-primary-container text-[40px] mb-md" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<h2 class="font-h2 text-h2 text-primary mb-md">Our Mission</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                            To redefine the dental experience in Meghalaya by providing world-class, ethical, and compassionate care. We are dedicated to restoring oral health, enhancing smiles, and building lasting relationships with our patients based on trust and transparency.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SMILE GALLERY SECTION -->
+<section class="py-xl bg-surface fade-in-section is-visible" id="gallery">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center mb-xl">
+<h2 class="font-h2 text-h2 text-primary mb-sm" style="font-family: 'Playfair Display', serif;">Smile Gallery</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Real results from our state-of-the-art clinic.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md lg:grid-cols-4"><div class="gallery-card rounded-lg overflow-hidden border border-outline-variant/30 shadow-sm">
+<img alt="Clinic Interior" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uhevqsKkfHbKi832Pqe7VUG1Sc0Pb4ySh3i3ovoHopWwDeSitJuTNe0jexkah6J-VZmjXvoqahqiAZk0QboaJ24AV-6O1MIH01Oo1MC-Zzt5GoyXcsx7eu2orzpjetU44bpLxAB7fbd2OXDrmdX1O89HzfvcIEQ-TS4DreQttD3j5ib7NaFnYf5JSZ5GNJA3GduO_brFb7sBu8fwMYWBnW6yt77UL4-DlZkJrQc3KTNgZcTPJelg9inzAbhAZzGAXJuBTFzSHEHfMI"/>
+</div>
+<div class="gallery-card rounded-lg overflow-hidden border border-outline-variant/30 shadow-sm">
+<img alt="Clinic Entrance" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uixteXd68VeWiX3gBt0c8mxmXCkY-5cIRdQ4rGKNoHWkwqC9ML33d5-WSKCiJt6ifk7McstdEyonmgjjAvIVAPHoskm7rWAykfennIosTbaDHycx5TR6ZdISzl5joEfx6Vnxawlc0F_mgMH1JUAX8iStfB4gCyJ1XQusIJj-z46xopZoBzlg8J0SCbednhvTZmNHisg4e9vembHthd1nINcfMzhFtiVvNVBAxZ248NONmJB4QEhQf68OpiOsjFGIPpNDLzcLbpoghQ"/>
+</div>
+<div class="gallery-card rounded-lg overflow-hidden border border-outline-variant/30 shadow-sm">
+<img alt="Dental Operatory 1" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uh3q6_rmo73LfUnFkob5rspGxbfoCaOP8AEfQANZtmwZaKnl-D1ZgeOF43qpDYqp9TP8_0-dve5Hd5Jxu27TNYNcYAAMM8EbyFgTy_9aruUHs0oUOAY9Hfucebe6Z3XR25GgZjpI5RN35YzEbte4y-MpHPu3EjO0pTc2_BFTpXTpSHoHavMyY8r2lu9hj71XDRRcTHGQjufQulrdMvoFKfIez9kIRQuc2FZHgQtMgO3n55lVr5FC4DFaZs62iwKoNVjSwKig1k7VAg"/>
+</div>
+<div class="gallery-card rounded-lg overflow-hidden border border-outline-variant/30 shadow-sm">
+<img alt="Dental Operatory 2" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujiiQ1mwhAGhBjvUXNiUrlrFKYiairLYbXsewnbLEQaLH1ZadITRMUFmAoHOhrSx3q9eUvGxXmHcpvh1Zput6-Ml0FWj1pec3JHiutsMWYocul0NLsJ7-JOcHfx24gTJ3snNAlvO8PJSLsJ75Qb9twzXieRRTyGmEzqJrts70YHbB6SPTynXXaf5JlL2ySdQe0yHXtJbAQbxRhvq57X7LyJstAjD-UX1vHOoNb_ei2GddKWsYBnUieTQSDiHyiwYHV8W_zXL25KyWc"/>
+</div></div>
+</div>
+</section>
+<!-- CASES SECTION (#cases) -->
+<section class="py-xl bg-surface-container-lowest border-y border-outline-variant/20 fade-in-section is-visible" id="cases">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center mb-xl">
+<h2 class="font-h2 text-h2 text-primary mb-sm" style="font-family: 'Playfair Display', serif;">Featured Cases</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Transformative dental care tailored to your unique needs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+<!-- Case 1 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md border border-outline-variant/30 flex flex-col group">
+<div class="relative h-64 overflow-hidden">
+<img alt="Full Mouth Rehabilitation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBTlr4Gf3IOTkKCaffh4ZwclcOlTmLfAB73YfUtkbadOHX5F0uMHyRJ4rUSJf8gDJGdWu3cUy1ou2VTOeJ7bBiKEkuyWKq0Umh_UYpVUzJ9Tsnh6eZVdYuxhINzccj2CD8oYfBWmgW5V6Vm0QHAG5U9rvFgusYPlKUAWPBhUGIcvXmML3RdJ5NmmM7eHTEZnYFLKRJ_7iAOCwhdoq75GFIqu4L4mhtGxxHpm3myBwvIh4SOlwB4Fxpx2nAXY3k8dhGEE9NthNQ7jwY"/>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="inline-flex items-center space-x-xs mb-sm">
+<span class="material-symbols-outlined text-primary-container text-sm">stars</span>
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">Complex Care</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-md" style="font-family: 'Playfair Display', serif;">Full Mouth Rehabilitation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">A comprehensive approach to restore function and aesthetics for a patient with severe dental wear and missing teeth. Utilizing a combination of implants and ceramic crowns to rebuild a confident smile.</p>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md border border-outline-variant/30 flex flex-col group">
+<div class="relative h-64 overflow-hidden">
+<img alt="Bespoke Smile Makeover" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvWr_zvlxRlBHexTy3r4zpmmeD9c6Jo8mJKHtff6Pjapez7ISUfU1FnwkjSCFV4dtip9wXimyYOqinEnoKM-kXKSOCni-LIEluEhyY432pViSlPtNYBRBxnbVdNf20zaxEa0VUZ4Q4sOUncyjsloNuHBu9hd5tqBP097r637NPZ0SWPa_wkYQqfQnpl3gAlOrbCnAHzWwIzJxnb88Y_VPP944A04duVsTaCgSIDMKBmCnjBMmEfuc8LYR7iLTpewzT_kDFL_foaCf4"/>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="inline-flex items-center space-x-xs mb-sm">
+<span class="material-symbols-outlined text-primary-container text-sm">palette</span>
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">Aesthetics</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-md" style="font-family: 'Playfair Display', serif;">Bespoke Smile Makeover</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">Custom porcelain veneers designed to correct discoloration and slight misalignments. The result is a natural, radiant smile that complements the patient's facial features perfectly.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- REVIEWS SECTION (#reviews) -->
+<section class="py-xl bg-primary-container text-white fade-in-section is-visible" id="reviews">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center mb-xl">
+<h2 class="font-h2 text-h2 mb-sm" style="font-family: 'Playfair Display', serif;">Patient Reviews</h2>
+<p class="font-body-lg text-body-lg text-white/80 max-w-2xl mx-auto">Hear what our patients have to say about their experience.</p>
+</div>
+<div class="flex overflow-x-auto hide-scrollbar gap-md pb-md snap-x">
+<!-- Review 1 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-white/10 backdrop-blur border border-white/20 p-lg rounded-xl snap-center flex-shrink-0">
+<div class="flex items-center mb-md text-[#d89216]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-lg italic text-white/90">"Exceptional care! Dr. Merrily is incredibly skilled and made my implant procedure completely painless. The clinic is pristine."</p>
+<div class="font-label-sm text-label-sm font-semibold tracking-wider uppercase">- Sarah L.</div>
+</div>
+<!-- Review 2 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-white/10 backdrop-blur border border-white/20 p-lg rounded-xl snap-center flex-shrink-0">
+<div class="flex items-center mb-md text-[#d89216]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-lg italic text-white/90">"The best dental experience I've had in Shillong. The staff is welcoming, and the treatment was explained thoroughly before starting."</p>
+<div class="font-label-sm text-label-sm font-semibold tracking-wider uppercase">- James K.</div>
+</div>
+<!-- Review 3 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-white/10 backdrop-blur border border-white/20 p-lg rounded-xl snap-center flex-shrink-0">
+<div class="flex items-center mb-md text-[#d89216]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-lg italic text-white/90">"I got my veneers done here and I couldn't be happier with the results. Dr. Merrily has a great eye for detail and aesthetics."</p>
+<div class="font-label-sm text-label-sm font-semibold tracking-wider uppercase">- Emily R.</div>
+</div>
+<!-- Review 4 -->
+<div class="min-w-[300px] md:min-w-[400px] bg-white/10 backdrop-blur border border-white/20 p-lg rounded-xl snap-center flex-shrink-0">
+<div class="flex items-center mb-md text-[#d89216]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md mb-lg italic text-white/90">"Very professional environment. The clinic uses the latest technology, and I felt very safe and comfortable throughout my visits."</p>
+<div class="font-label-sm text-label-sm font-semibold tracking-wider uppercase">- Michael T.</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="bg-surface-container-highest border-t border-outline-variant/30 py-xl">
+<div class="max-w-7xl mx-auto px-margin grid grid-cols-1 md:grid-cols-3 gap-xl">
+<div>
+<img alt="Dr Merilly's Dental Clinic Logo" class="h-12 w-auto mb-md" src="https://lh3.googleusercontent.com/aida/ADBb0uhvDxxJlbwAlUlTtrqHF4SzGvbUzt0lqrbopjf4059vxdGkd-Xc7XCRlLNDfcgRix01SIFfJo6EeB4XygPLIZ4Nh8SU5Qd2Qk-KfwbitIUzlwPrIszZnGjlGwP5bLa6IT3QWmXjuml7L2PH4jIkN2fltVIoKeNx950X6uuYiqWaXUe829JUcooRHAI_jsQiLI8awCWT9FHuLyXrIyzTJOdneCqp8mem00YDgr3D0mq57PRNAsrdPIExjT_6eALZENZqWbWNA-Qxow"/>
+<p class="font-body-md text-body-md text-on-surface-variant">Shaping Your Smile Better. Advanced dental care in Shillong.</p>
+</div>
+<div>
+<h4 class="font-h3 text-h3 text-primary mb-md" style="font-family: 'Playfair Display', serif;">Contact Us</h4>
+<ul class="space-y-sm text-on-surface-variant font-body-md">
+<li class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="">RR Colony, Lane 8, Rynjah, Shillong</span>
+</li>
+<li class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary">phone</span>
+<a class="hover:text-primary transition-colors" href="tel:+918258056053">+91 8258056053</a>
+</li>
+<li class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary">mail</span>
+<a class="hover:text-primary transition-colors" href="mailto:dr.merrily@gmail.com">dr.merrily@gmail.com</a>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="font-h3 text-h3 text-primary mb-md" style="font-family: 'Playfair Display', serif;">Quick Links</h4>
+<ul class="space-y-sm text-on-surface-variant font-body-md">
+<li class=""><a class="hover:text-primary transition-colors" href="#services">Services</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#about">About</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#cases">Cases</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#reviews">Reviews</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin mt-xl pt-lg border-t border-outline-variant/30 text-center text-on-surface-variant font-body-md">
+        © 2024 Dr Merilly's Dental Clinic. All rights reserved.
+    </div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a aria-label="Chat on WhatsApp" class="whatsapp-btn" href="https://wa.me/918258056053" rel="noopener noreferrer" target="_blank"><img alt="WhatsApp" class="w-full h-full object-contain p-2" src="https://lh3.googleusercontent.com/aida/ADBb0uiufjLwqugFAvC8472hPGItsFGEYYE0ZwYksy3rzfSNWuK6xcJwGgzL58IG_CpipQTkMNBgifTMdFPw_gY9KMYgtRZMhY-_oCkz8k7RoP-1C1dSAMwR624c49wAgn9H4FM__ycxgSZDhvLyKX0l9hr8doc4YGWppQqNxklv7sT4g11z9-vHf_cn-7-qOlVQM4MH5M5ht0jcd-hSf3yjtzelvmFuTZvaKc_XICdJPEoNHS_ZnNzfdA0zmfaggX_2g-nKr0Kfog2JlGM"/></a>
+</body></html>
